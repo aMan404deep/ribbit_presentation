@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ribbit — Enterprise Signal Intelligence Platform</title>
+  <meta name="description" content="Ribbit cuts through notification noise. One platform for polls, alerts, and forms that employees actually respond to." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Figtree:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="screenshots/frog-mascot.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ═══════════════ NAVIGATION ═══════════════ -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-brand">
+        <img src="screenshots/frog-mascot.svg" alt="Ribbit" class="nav-logo" />
+        <span class="nav-wordmark">Ribbit</span>
+      </a>
+      <div class="nav-links">
+        <a href="#problem">Problem</a>
+        <a href="#solution">Solution</a>
+        <a href="#consumer">Desktop App</a>
+        <a href="#publisher">Publisher Portal</a>
+        <a href="#signals">Signal Types</a>
+        <a href="#gallery">Gallery</a>
+      </div>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="theme-toggle-icon sun">☀️</span>
+        <span class="theme-toggle-icon moon">🌙</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════ HERO ═══════════════ -->
+  <section class="slide slide-hero" id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="hero-glow hero-glow-2"></div>
+    <div class="hero-content">
+      <div class="hero-badge">Enterprise Signal Intelligence</div>
+      <h1 class="hero-title">
+        Stop broadcasting.<br />
+        Start <span class="gradient-text">connecting.</span>
+      </h1>
+      <p class="hero-subtitle">
+        Ribbit delivers polls, alerts, and forms directly to employee desktops — 
+        intelligently, respectfully, and with guaranteed visibility.
+      </p>
+      <div class="hero-cta-row">
+        <a href="#solution" class="btn btn-primary">Explore the Platform</a>
+        <a href="#gallery" class="btn btn-ghost">View Screenshots</a>
+      </div>
+    </div>
+    <div class="hero-mockup">
+      <img src="screenshots/poll-single-dark.png" alt="Ribbit Desktop Poll" class="hero-img hero-img-main" />
+      <img src="screenshots/alert-dark.png" alt="Ribbit Alert" class="hero-img hero-img-float hero-img-float-1" />
+      <img src="screenshots/persistent-poll-dark.png" alt="Persistent Bar" class="hero-img hero-img-float hero-img-float-2" />
+    </div>
+  </section>
+
+  <!-- ═══════════════ THE PROBLEM ═══════════════ -->
+  <section class="slide slide-problem" id="problem">
+    <div class="slide-inner">
+      <div class="section-label">The Problem</div>
+      <h2 class="section-title">Why existing tools fail</h2>
+      <p class="section-subtitle">Enterprise communication today is broken. Here's what happens every single day.</p>
+      <div class="problem-grid">
+        <div class="problem-card">
+          <div class="problem-icon">📧</div>
+          <h3>The Email Graveyard</h3>
+          <p>Important surveys and policy acknowledgments get buried under hundreds of unread emails. Average open rate for internal emails: <strong>21%</strong>.</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon">💬</div>
+          <h3>Slack & Teams Noise</h3>
+          <p>Critical announcements drown in a river of GIFs, threads, and casual conversations. Messages scroll out of sight within minutes.</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon">🔀</div>
+          <h3>Context Switching Tax</h3>
+          <p>Employees must leave their workflow, open another app, navigate to the right channel, find the message, and respond. Most never do.</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon">📊</div>
+          <h3>Zero Accountability</h3>
+          <p>Leadership has no way to verify who read a critical security advisory, who acknowledged a policy change, or whether quorum was reached.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ THE SOLUTION ═══════════════ -->
+  <section class="slide slide-solution" id="solution">
+    <div class="slide-inner">
+      <div class="section-label">The Solution</div>
+      <h2 class="section-title">What is Ribbit?</h2>
+      <div class="solution-layout">
+        <div class="solution-text">
+          <p class="solution-lead">
+            Ribbit is an <strong>enterprise signal platform</strong> that delivers polls, priority alerts, and multi-section forms 
+            directly to employee desktops — without requiring them to search inboxes, monitor busy chat channels, or switch contexts.
+          </p>
+          <div class="solution-pillars">
+            <div class="solution-pillar">
+              <div class="pillar-marker">01</div>
+              <div>
+                <h4>Publisher Web Studio</h4>
+                <p>Leaders author, target, schedule, and analyze signals through a guided 4-step wizard.</p>
+              </div>
+            </div>
+            <div class="solution-pillar">
+              <div class="pillar-marker">02</div>
+              <div>
+                <h4>Consumer Desktop App</h4>
+                <p>Employees receive clean, elegant cards in the corner of their screen — meeting-aware, quiet during calls, and respectful of focus.</p>
+              </div>
+            </div>
+            <div class="solution-pillar">
+              <div class="pillar-marker">03</div>
+              <div>
+                <h4>Guaranteed Response</h4>
+                <p>Automatic polite escalation ensures critical communications and surveys reach completion without manual chasing.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="solution-visual">
+          <div class="solution-preview-card">
+            <img src="screenshots/all-filled.png" alt="Ribbit Studio" class="solution-preview-img" />
+            <div class="solution-preview-badge">
+              <span>Web Studio & Desktop Client</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ CONSUMER DESKTOP APP ═══════════════ -->
+  <section class="slide slide-consumer" id="consumer">
+    <div class="slide-inner">
+      <div class="section-label">Consumer Desktop App</div>
+      <h2 class="section-title">Context-aware. Respectful. Impossible to miss.</h2>
+      <p class="section-subtitle">The desktop client adapts its behavior to the employee's current state — so it's never annoying, but always effective.</p>
+      
+      <!-- Scenario Cards -->
+      <div class="scenario-grid">
+        <div class="scenario-card">
+          <div class="scenario-indicator scenario-green"></div>
+          <h3>Normal Desktop Focus</h3>
+          <p>A compact, elegant card appears in the corner of the screen. Employee responds with 1 click — no context switch needed.</p>
+          <div class="scenario-screenshots">
+            <img src="screenshots/poll-single-dark.png" alt="Poll Card Dark" />
+          </div>
+        </div>
+        <div class="scenario-card">
+          <div class="scenario-indicator scenario-amber"></div>
+          <h3>In a Meeting or Screen Sharing</h3>
+          <p>The signal is silently held. No popup interrupts a customer call or board presentation. Signals appear the moment the meeting ends.</p>
+        </div>
+
+        <div class="scenario-card">
+          <div class="scenario-indicator scenario-purple"></div>
+          <h3>Remind Me Later</h3>
+          <p>Employee snoozes the signal for 10m, 30m, 1h, or a custom time. The card contracts into a tiny reminder pill and re-expands at the chosen time.</p>
+        </div>
+        <div class="scenario-card">
+          <div class="scenario-indicator scenario-amber"></div>
+          <h3>Workstation Locked / Asleep</h3>
+          <p>Signals wait safely while the computer is locked. When the employee unlocks their screen, any missed signals appear immediately so nothing is lost.</p>
+        </div>
+        <div class="scenario-card">
+          <div class="scenario-indicator scenario-red"></div>
+          <h3>Offline / No Network</h3>
+          <p>Employees can respond even when disconnected or traveling. Responses save safely and sync automatically the moment connection returns.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ 3-TIER ESCALATION ═══════════════ -->
+  <section class="slide slide-tiers" id="signals">
+    <div class="slide-inner">
+      <div class="section-label">Signal Escalation</div>
+      <h2 class="section-title">Three escalation tiers, one intelligent system</h2>
+      <p class="section-subtitle">Ribbit automatically escalates signals from gentle to assertive based on urgency and approaching deadlines.</p>
+      
+      <div class="tier-track">
+        <!-- Tier 1 -->
+        <div class="tier-card">
+          <div class="tier-header tier-1-header">
+            <span class="tier-number">Tier 1</span>
+            <span class="tier-name">Desktop Card</span>
+          </div>
+          <div class="tier-body">
+            <p>A compact, elegant notification card in the corner of the screen. Non-intrusive. Easy to respond in 1 click or snooze with "Remind Me Later" without breaking workflow.</p>
+            <div class="tier-when">
+              <strong>When:</strong> Default polite delivery for all standard quick polls, announcements, and forms.
+            </div>
+            <div class="tier-screenshots-row">
+              <img src="screenshots/poll-single-dark.png" alt="Tier 1 Dark" />
+              <img src="screenshots/poll-single-light.png" alt="Tier 1 Light" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Tier 2 -->
+        <div class="tier-card">
+          <div class="tier-header tier-2-header">
+            <span class="tier-number">Tier 2</span>
+            <span class="tier-name">Instant Notification Modal</span>
+          </div>
+          <div class="tier-body">
+            <p>A dedicated signal type delivered as an interactive notification modal on screen. Employees can read and answer directly inside the modal without opening another app or switching contexts.</p>
+            <div class="tier-when">
+              <strong>Signal Type:</strong> Instant Modal Poll, Instant Modal Alert, Instant Modal Form — immediate in-place answering.
+            </div>
+            <div class="tier-screenshots-row">
+              <img src="screenshots/instant-modal-poll-dark.png" alt="Instant Modal Dark" />
+              <img src="screenshots/instant-modal-poll-light.png" alt="Instant Modal Light" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Tier 3 -->
+        <div class="tier-card">
+          <div class="tier-header tier-3-header">
+            <span class="tier-number">Tier 3</span>
+            <span class="tier-name">Persistent Lockdown</span>
+          </div>
+          <div class="tier-body">
+            <p>The definitive OS-level lockdown mode. Pinned to the screen edge always-on-top with a live countdown timer. It stays locked on screen across all workspaces and blocks dismissal or app quitting until the employee answers.</p>
+            <div class="tier-when">
+              <strong>Lockdown Trigger:</strong> Approaching expiration deadline (configurable lead buffer) or publisher-enforced persistent compliance.
+            </div>
+            <div class="tier-screenshots-row">
+              <img src="screenshots/persistent-poll-dark.png" alt="Persistent Lockdown Dark" />
+              <img src="screenshots/persistent-alert-dark.png" alt="Persistent Lockdown Alert" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ PUBLISHER PORTAL ═══════════════ -->
+  <section class="slide slide-publisher" id="publisher">
+    <div class="slide-inner">
+      <div class="section-label">Publisher Web Portal</div>
+      <h2 class="section-title">Author. Target. Schedule. Analyze.</h2>
+      <p class="section-subtitle">A powerful web studio where leaders create and manage enterprise signals through a guided 4-step workflow.</p>
+      
+      <div class="wizard-steps">
+        <div class="wizard-step">
+          <div class="wizard-step-number">01</div>
+          <h3>Build</h3>
+          <p>Compose questions using 11 specialized input types. Add sections, drag-and-drop reorder, and attach in-line guidance popovers to explain technical terms.</p>
+        </div>
+        <div class="wizard-step-arrow">→</div>
+        <div class="wizard-step">
+          <div class="wizard-step-number">02</div>
+          <h3>Audience</h3>
+          <p>Target by department, office location, or individual employees. Configure per-group anonymity controls (Recorded Identity vs. Fully Anonymous).</p>
+        </div>
+        <div class="wizard-step-arrow">→</div>
+        <div class="wizard-step">
+          <div class="wizard-step-number">03</div>
+          <h3>Schedule</h3>
+          <p>Send immediately or schedule for a specific date/time. Set up automated recurring series (Daily, Weekly, Monthly). Configure expiration and persistent escalation.</p>
+        </div>
+        <div class="wizard-step-arrow">→</div>
+        <div class="wizard-step">
+          <div class="wizard-step-number">04</div>
+          <h3>Review</h3>
+          <p>Pre-flight check before sending. Review all questions, audience size, and timing. One-click Publish, Schedule, or Save Draft.</p>
+        </div>
+      </div>
+
+      <!-- Publisher screenshots -->
+      <div class="publisher-gallery">
+        <div class="pub-card">
+          <img src="screenshots/all-filled.png" alt="Form Wizard Complete" />
+          <span class="pub-card-label">Complete Form Builder</span>
+        </div>
+        <div class="pub-card">
+          <img src="screenshots/details-question-filled.png" alt="Question Details" />
+          <span class="pub-card-label">Question Details & Options</span>
+        </div>
+        <div class="pub-card">
+          <img src="screenshots/guidance-popover-filled.png" alt="Guidance Popover" />
+          <span class="pub-card-label">In-Line Guidance Popover</span>
+        </div>
+        <div class="pub-card">
+          <img src="screenshots/audience-labels-section.png" alt="Audience Labels" />
+          <span class="pub-card-label">Audience & Labels</span>
+        </div>
+        <div class="pub-card">
+          <img src="screenshots/error-states.png" alt="Validation Errors" />
+          <span class="pub-card-label">Pre-Flight Validation</span>
+        </div>
+        <div class="pub-card">
+          <img src="screenshots/preview-question.png" alt="Live Preview" />
+          <span class="pub-card-label">Live Consumer Preview</span>
+        </div>
+      </div>
+
+      <!-- Publisher Features List -->
+      <div class="publisher-features">
+        <h3 class="pub-features-title">Full Feature Catalog</h3>
+        <div class="feature-cols">
+          <div class="feature-col">
+            <h4>Signal Management Hub</h4>
+            <ul>
+              <li>KPI status cards (All, Active, Scheduled, Recurring, Drafts)</li>
+              <li>Table view & Card grid with auto-calculated pagination</li>
+              <li>Omni-search across titles, questions, and authors</li>
+              <li>Filter by signal type, privacy, collaborator scope, date range</li>
+              <li>1-click Clone, Edit, Delete, View Analytics</li>
+            </ul>
+          </div>
+          <div class="feature-col">
+            <h4>6 Signal Types</h4>
+            <ul>
+              <li>Standard Quick Poll (single / multi choice)</li>
+              <li>Priority Alert (mandatory acknowledge)</li>
+              <li>Multi-Section Form (complex survey)</li>
+              <li>Instant Modal Poll (notification modal with in-place vote)</li>
+              <li>Instant Modal Alert (notification modal with explicit acknowledge)</li>
+              <li>Instant Modal Form (notification modal with multi-question input)</li>
+            </ul>
+          </div>
+          <div class="feature-col">
+            <h4>Groups & Governance</h4>
+            <ul>
+              <li>Dual perspective view (Groups / Consumers)</li>
+              <li>Reverse Lookup — find all groups for any employee</li>
+              <li>Clone by Group ID</li>
+              <li>Publisher role elevation toggle</li>
+              <li>Manual CSV user upload wizard</li>
+              <li>Location & region assignment</li>
+            </ul>
+          </div>
+          <div class="feature-col">
+            <h4>Analytics & Export</h4>
+            <ul>
+              <li>Two-stage analytics (drawer → full dashboard)</li>
+              <li>Interactive donut charts & histograms</li>
+              <li>Group/location pivot filtering</li>
+              <li>Quorum progress tracking</li>
+              <li>Excel (.xlsx) & CSV export</li>
+              <li>Anonymity-aware identity masking</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ 11 QUESTION TYPES ═══════════════ -->
+  <section class="slide slide-questions" id="questions">
+    <div class="slide-inner">
+      <div class="section-label">Question Engine</div>
+      <h2 class="section-title">11 enterprise input types</h2>
+      <p class="section-subtitle">Every question type purpose-built for enterprise decision-making, employee feedback, and compliance verification.</p>
+      
+      <div class="question-showcase">
+        <div class="q-card">
+          <div class="q-card-header">
+            <span class="q-number">01</span>
+            <span class="q-name">Single Choice</span>
+          </div>
+          <img src="screenshots/form-choice-single-dark.png" alt="Single Choice" />
+        </div>
+        <div class="q-card">
+          <div class="q-card-header">
+            <span class="q-number">02</span>
+            <span class="q-name">Multiple Choice</span>
+          </div>
+          <img src="screenshots/form-choice-multi-dark.png" alt="Multi Choice" />
+        </div>
+        <div class="q-card">
+          <div class="q-card-header">
+            <span class="q-number">03</span>
+            <span class="q-name">NPS (0–10)</span>
+          </div>
+          <img src="screenshots/form-nps-dark.png" alt="NPS" />
+        </div>
+        <div class="q-card">
+          <div class="q-card-header">
+            <span class="q-number">04</span>
+            <span class="q-name">Likert Scale</span>
+          </div>
+          <img src="screenshots/form-likert-dark.png" alt="Likert" />
+        </div>
+        <div class="q-card">
+          <div class="q-card-header">
+            <span class="q-number">05</span>
+            <span class="q-name">Star Rating</span>
+          </div>
+          <img src="screenshots/form-rating-star-dark.png" alt="Star Rating" />
+        </div>
+        <div class="q-card">
+          <div class="q-card-header">
+            <span class="q-number">06</span>
+            <span class="q-name">Heart Rating</span>
+          </div>
+          <img src="screenshots/form-rating-heart-dark.png" alt="Heart Rating" />
+        </div>
+        <div class="q-card">
+          <div class="q-card-header">
+            <span class="q-number">07</span>
+            <span class="q-name">Number Rating</span>
+          </div>
+          <img src="screenshots/form-rating-number-dark.png" alt="Number Rating" />
+        </div>
+        <div class="q-card">
+          <div class="q-card-header">
+            <span class="q-number">08</span>
+            <span class="q-name">Preference Ranking</span>
+          </div>
+          <img src="screenshots/form-ranking-dark.png" alt="Ranking" />
+        </div>
+        <div class="q-card">
+          <div class="q-card-header">
+            <span class="q-number">09</span>
+            <span class="q-name">Dropdown</span>
+          </div>
+          <img src="screenshots/form-dropdown-dark.png" alt="Dropdown" />
+        </div>
+        <div class="q-card">
+          <div class="q-card-header">
+            <span class="q-number">10</span>
+            <span class="q-name">Date Picker</span>
+          </div>
+          <img src="screenshots/form-date-dark.png" alt="Date Picker" />
+        </div>
+        <div class="q-card">
+          <div class="q-card-header">
+            <span class="q-number">11</span>
+            <span class="q-name">Open Text</span>
+          </div>
+          <img src="screenshots/form-text-long-dark.png" alt="Open Text" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ SCREENSHOT GALLERY ═══════════════ -->
+  <section class="slide slide-gallery" id="gallery">
+    <div class="slide-inner">
+      <div class="section-label">Screenshot Gallery</div>
+      <h2 class="section-title">See it in action</h2>
+      <p class="section-subtitle">Every state, every theme, every edge case — meticulously crafted.</p>
+      
+      <div class="gallery-tabs">
+        <button class="gallery-tab active" data-filter="all">All</button>
+        <button class="gallery-tab" data-filter="poll">Polls</button>
+        <button class="gallery-tab" data-filter="alert">Alerts</button>
+        <button class="gallery-tab" data-filter="form">Forms</button>
+        <button class="gallery-tab" data-filter="persistent">Persistent</button>
+        <button class="gallery-tab" data-filter="instant">Instant Modal</button>
+        <button class="gallery-tab" data-filter="publisher">Publisher</button>
+      </div>
+      
+      <div class="gallery-grid" id="galleryGrid">
+        <!-- Polls -->
+        <div class="gallery-item" data-category="poll">
+          <img src="screenshots/poll-single-dark.png" alt="Single Poll Dark" loading="lazy" />
+          <span class="gallery-label">Single Poll · Dark</span>
+        </div>
+        <div class="gallery-item" data-category="poll">
+          <img src="screenshots/poll-single-light.png" alt="Single Poll Light" loading="lazy" />
+          <span class="gallery-label">Single Poll · Light</span>
+        </div>
+        <div class="gallery-item" data-category="poll">
+          <img src="screenshots/poll-multi-dark.png" alt="Multi Poll Dark" loading="lazy" />
+          <span class="gallery-label">Multi Poll · Dark</span>
+        </div>
+        <div class="gallery-item" data-category="poll">
+          <img src="screenshots/poll-multi-light.png" alt="Multi Poll Light" loading="lazy" />
+          <span class="gallery-label">Multi Poll · Light</span>
+        </div>
+        <!-- Alerts -->
+        <div class="gallery-item" data-category="alert">
+          <img src="screenshots/alert-dark.png" alt="Alert Dark" loading="lazy" />
+          <span class="gallery-label">Priority Alert · Dark</span>
+        </div>
+        <div class="gallery-item" data-category="alert">
+          <img src="screenshots/alert-light.png" alt="Alert Light" loading="lazy" />
+          <span class="gallery-label">Priority Alert · Light</span>
+        </div>
+        <!-- Forms -->
+        <div class="gallery-item" data-category="form">
+          <img src="screenshots/form-all-dark.png" alt="Full Form Dark" loading="lazy" />
+          <span class="gallery-label">Multi-Section Form · Dark</span>
+        </div>
+        <div class="gallery-item" data-category="form">
+          <img src="screenshots/form-all-light.png" alt="Full Form Light" loading="lazy" />
+          <span class="gallery-label">Multi-Section Form · Light</span>
+        </div>
+        <div class="gallery-item" data-category="form">
+          <img src="screenshots/form-nps-filled-dark.png" alt="NPS Filled Dark" loading="lazy" />
+          <span class="gallery-label">NPS Filled · Dark</span>
+        </div>
+        <div class="gallery-item" data-category="form">
+          <img src="screenshots/form-rating-star-filled-dark.png" alt="Star Filled Dark" loading="lazy" />
+          <span class="gallery-label">Star Rating Filled · Dark</span>
+        </div>
+        <div class="gallery-item" data-category="form">
+          <img src="screenshots/form-ranking-filled-dark.png" alt="Ranking Filled" loading="lazy" />
+          <span class="gallery-label">Ranking Filled · Dark</span>
+        </div>
+        <div class="gallery-item" data-category="form">
+          <img src="screenshots/form-review-dark.png" alt="Review Screen Dark" loading="lazy" />
+          <span class="gallery-label">Review Screen · Dark</span>
+        </div>
+        <!-- Persistent -->
+        <div class="gallery-item" data-category="persistent">
+          <img src="screenshots/persistent-alert-dark.png" alt="Persistent Alert Dark" loading="lazy" />
+          <span class="gallery-label">Persistent Alert · Dark</span>
+        </div>
+        <div class="gallery-item" data-category="persistent">
+          <img src="screenshots/persistent-alert-light.png" alt="Persistent Alert Light" loading="lazy" />
+          <span class="gallery-label">Persistent Alert · Light</span>
+        </div>
+        <div class="gallery-item" data-category="persistent">
+          <img src="screenshots/persistent-poll-dark.png" alt="Persistent Poll Dark" loading="lazy" />
+          <span class="gallery-label">Persistent Poll · Dark</span>
+        </div>
+        <div class="gallery-item" data-category="persistent">
+          <img src="screenshots/persistent-poll-fill-dark.png" alt="Persistent Fill Dark" loading="lazy" />
+          <span class="gallery-label">Persistent Filled · Dark</span>
+        </div>
+        <div class="gallery-item" data-category="persistent">
+          <img src="screenshots/persistent-poll-skip-dark.png" alt="Persistent Skip Dark" loading="lazy" />
+          <span class="gallery-label">Persistent Skip · Dark</span>
+        </div>
+        <div class="gallery-item" data-category="persistent">
+          <img src="screenshots/persistent-form-dark.png" alt="Persistent Form Dark" loading="lazy" />
+          <span class="gallery-label">Persistent Form · Dark</span>
+        </div>
+        <!-- Instant Modal -->
+        <div class="gallery-item" data-category="instant">
+          <img src="screenshots/instant-modal-alert-dark.png" alt="Instant Alert Dark" loading="lazy" />
+          <span class="gallery-label">Instant Alert · Dark</span>
+        </div>
+        <div class="gallery-item" data-category="instant">
+          <img src="screenshots/instant-modal-alert-light.png" alt="Instant Alert Light" loading="lazy" />
+          <span class="gallery-label">Instant Alert · Light</span>
+        </div>
+        <div class="gallery-item" data-category="instant">
+          <img src="screenshots/instant-modal-poll-dark.png" alt="Instant Poll Dark" loading="lazy" />
+          <span class="gallery-label">Instant Poll · Dark</span>
+        </div>
+        <div class="gallery-item" data-category="instant">
+          <img src="screenshots/instant-modal-poll-light.png" alt="Instant Poll Light" loading="lazy" />
+          <span class="gallery-label">Instant Poll · Light</span>
+        </div>
+        <div class="gallery-item" data-category="instant">
+          <img src="screenshots/instant-modal-form-dark.png" alt="Instant Form Dark" loading="lazy" />
+          <span class="gallery-label">Instant Form · Dark</span>
+        </div>
+        <div class="gallery-item" data-category="instant">
+          <img src="screenshots/instant-modal-form-light.png" alt="Instant Form Light" loading="lazy" />
+          <span class="gallery-label">Instant Form · Light</span>
+        </div>
+        <!-- Publisher -->
+        <div class="gallery-item gallery-item-wide" data-category="publisher">
+          <img src="screenshots/all-filled.png" alt="Publisher Wizard" loading="lazy" />
+          <span class="gallery-label">Form Wizard · All Filled</span>
+        </div>
+        <div class="gallery-item gallery-item-wide" data-category="publisher">
+          <img src="screenshots/details-question-filled.png" alt="Question Configuration" loading="lazy" />
+          <span class="gallery-label">Question Details & Options</span>
+        </div>
+        <div class="gallery-item gallery-item-wide" data-category="publisher">
+          <img src="screenshots/guidance-popover-filled.png" alt="Guidance Popover" loading="lazy" />
+          <span class="gallery-label">Guidance Popover · Filled</span>
+        </div>
+        <div class="gallery-item gallery-item-wide" data-category="publisher">
+          <img src="screenshots/audience-labels-section.png" alt="Audience Labels" loading="lazy" />
+          <span class="gallery-label">Audience Targeting & Labels</span>
+        </div>
+        <div class="gallery-item gallery-item-wide" data-category="publisher">
+          <img src="screenshots/error-states.png" alt="Pre-Flight Validation" loading="lazy" />
+          <span class="gallery-label">Pre-Flight Validation & Error States</span>
+        </div>
+        <div class="gallery-item gallery-item-wide" data-category="publisher">
+          <img src="screenshots/preview-question.png" alt="Live Consumer Preview" loading="lazy" />
+          <span class="gallery-label">Live Consumer Preview</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ USER FLOW ═══════════════ -->
+  <section class="slide slide-flow" id="flow">
+    <div class="slide-inner">
+      <div class="section-label">User Flows</div>
+      <h2 class="section-title">How it works, end to end</h2>
+      
+      <div class="flow-container">
+        <h3 class="flow-title">Publisher Flow</h3>
+        <div class="flow-steps">
+          <div class="flow-step"><span class="flow-step-num">1</span><span>Sign In</span></div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step"><span class="flow-step-num">2</span><span>Click [+ Create Signal]</span></div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step"><span class="flow-step-num">3</span><span>Choose Signal Type</span></div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step"><span class="flow-step-num">4</span><span>Build Questions</span></div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step"><span class="flow-step-num">5</span><span>Select Audience</span></div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step"><span class="flow-step-num">6</span><span>Set Schedule</span></div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step"><span class="flow-step-num">7</span><span>Review & Publish</span></div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step"><span class="flow-step-num">8</span><span>Monitor Analytics</span></div>
+        </div>
+      </div>
+
+      <div class="flow-container">
+        <h3 class="flow-title">Consumer Flow</h3>
+        <div class="flow-steps">
+          <div class="flow-step"><span class="flow-step-num">1</span><span>Signal Arrives</span></div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step"><span class="flow-step-num">2</span><span>Presence Check (In Meeting?)</span></div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step"><span class="flow-step-num">3</span><span>Card Renders</span></div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step"><span class="flow-step-num">4</span><span>Employee Responds</span></div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step"><span class="flow-step-num">5</span><span>Response Synced</span></div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step"><span class="flow-step-num">6</span><span>Card Dismissed</span></div>
+        </div>
+      </div>
+
+      <div class="flow-container">
+        <h3 class="flow-title">Escalation Flow (If No Response)</h3>
+        <div class="flow-steps">
+          <div class="flow-step flow-step-tier1"><span class="flow-step-num">T1</span><span>Desktop Card Notification</span></div>
+          <div class="flow-arrow flow-arrow-escalate">⚡</div>
+          <div class="flow-step flow-step-tier2"><span class="flow-step-num">T2</span><span>Instant Notification Modal</span></div>
+          <div class="flow-arrow flow-arrow-escalate">⚡</div>
+          <div class="flow-step flow-step-tier3"><span class="flow-step-num">T3</span><span>Persistent Lockdown</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="screenshots/frog-mascot.svg" alt="Ribbit" class="footer-logo" />
+        <span class="footer-wordmark">Ribbit</span>
+      </div>
+      <p class="footer-copy">Enterprise Signal Intelligence Platform · Internal Product Presentation</p>
+    </div>
+  </footer>
+
+  <!-- ═══════════════ LIGHTBOX ═══════════════ -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose">&times;</button>
+    <img class="lightbox-img" id="lightboxImg" alt="Full preview" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
