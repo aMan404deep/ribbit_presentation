@@ -206,6 +206,7 @@ code {
 .nav-wordmark {
   background: linear-gradient(135deg, var(--text-primary) 40%, var(--color-primary) 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -309,6 +310,7 @@ code {
 .gradient-text {
   background: linear-gradient(135deg, #A79FFF 0%, #6960DD 60%, #463CB8 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -1072,7 +1074,7 @@ code {
 }
 
 /* ==========================================================================
-   QUESTION ENGINE (11 TYPES)
+   QUESTION ENGINE (MULTIPLE INPUT TYPES)
    ========================================================================== */
 .question-showcase {
   display: grid;
@@ -1448,6 +1450,7 @@ code {
 .footer-wordmark {
   background: linear-gradient(135deg, var(--text-primary) 40%, var(--color-primary) 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
